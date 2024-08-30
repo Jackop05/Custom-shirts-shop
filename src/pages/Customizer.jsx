@@ -14,14 +14,9 @@ const Customizer = () => {
   const snap = useSnapshot(state);
 
   const [file, setFile] = useState('');
-
   const [activeEditorTab, setActiveEditorTab] = useState("");
-  const [activeFilterTab, setActiveFilterTab] = useState({
-    logoShirt: true,
-    stylishShirt: false,
-  })
+  const [activeFilterTab, setActiveFilterTab] = useState({ logoShirt: true, stylishShirt: false })
 
-  // show tab content depending on the activeTab
   const generateTabContent = () => {
     switch (activeEditorTab) {
       case "colorpicker":
@@ -61,8 +56,6 @@ const Customizer = () => {
         break;
     }
 
-    // after setting the state, activeFilterTab is updated
-
     setActiveFilterTab((prevState) => {
       return {
         ...prevState,
@@ -83,6 +76,7 @@ const Customizer = () => {
     <AnimatePresence>
       {!snap.intro && (
         <>
+        
           <motion.div
             key="custom"
             className="absolute top-0 left-0 z-10"
@@ -97,7 +91,6 @@ const Customizer = () => {
                     handleClick={() => setActiveEditorTab(tab.name)}
                   />
                 ))}
-
                 {generateTabContent()}
               </div>
             </div>
@@ -129,6 +122,7 @@ const Customizer = () => {
               />
             ))}
           </motion.div>
+
         </>
       )}
     </AnimatePresence>
