@@ -3,6 +3,8 @@
 ## 📝 Project Overview
 The "3D Shirt Customization App" is an interactive `React` application that allows users to design and customize shirts in a 3D environment. Users can choose the color of the shirt and upload their own images to apply to the shirt design, offering a personalized fashion experience. The application is built with modern web technologies, including `Framer Motion` for animations and `Valtio` for state management, ensuring a smooth and dynamic user experience.
 
+![image](https://github.com/user-attachments/assets/9da40bee-47f5-4751-9f7e-10873cc07b85)
+
 ## 💡 Features
 - **Shirt Color Customization:**  
   Users can easily change the color of the shirt, exploring a variety of color options to suit their style.
